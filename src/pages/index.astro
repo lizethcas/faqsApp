@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 
-import Card from "../components/Card.astro";
-import { FaqComponent } from "../components/FaqComponent/Faq.component";
+import Card from "../componentss/Card.astro";
+import FaqComponent from "../componentss/FaqComponent.vue";
 import star from "../assets/images/icon-star.svg";
 
 interface FAQS {
@@ -48,8 +48,6 @@ const faqs: FAQS[] = [
           />
         ))
       }
-
-     
     </Card>
   </main>
 </Layout>

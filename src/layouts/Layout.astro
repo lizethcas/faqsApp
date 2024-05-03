@@ -1,5 +1,5 @@
 ---
-import localBackgroundImage from "../assets/images/background.svg";
+import localBackground from "../assets/images/background.svg";
 
 interface Props {
   title: string;
@@ -28,11 +28,11 @@ const { title } = Astro.props;
   <body class="bg-[#f9eeff] text-sm xl:text-base lg:text-base tracking-none font-workSans">
     <header>
       <img
-        src={localBackgroundImage.src}
+        src={localBackground.src}
         alt="background"
         class="w-full "
        
-        loading="lazy"
+        loading="eager"
       />
     </header>
 
